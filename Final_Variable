@@ -1,0 +1,9 @@
+/* write a java Program for Fianl Variable Test*/
+
+class FinalTest{
+    public static void main(String[] args) {
+        final int x = 10;
+            x = x + 20;
+            System.out.print("x value is = "+x);
+    }
+}
