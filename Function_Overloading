@@ -1,0 +1,21 @@
+/* Write a Java Program to function Overloading */
+
+class Calculator{
+    public int add(int a,int b){
+        return(a+b);
+    }
+    public float add(int a, float b){
+        return(a+b);
+    }
+    public float add(float a, float b){
+        return(a+b);
+    }
+}
+class overloadingTest{
+    public static void main(String args[]){
+        Calculator c = new Calculator();
+        System.out.println("Addition of Two Number : "+(c.add(10,20)));
+        System.out.println("Addition of one Integer and one Float Numbers :"+(c.add(10,20.50f)));
+        System.out.println("Addition of Two Float Numbers :"+(c.add(10.20f,20.30f)));
+    }
+}
