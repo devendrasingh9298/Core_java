@@ -1,0 +1,20 @@
+/* Write a java Program do Constructor using Parameterized Constructor */
+
+class Person {
+   String nm;
+   int age;
+    Person(String s, int a){
+        nm = s;
+        age = a;
+    }
+    void Display(){
+        System.out.println("Name is "+nm);
+        System.out.println("Age is "+age);
+    }
+}
+   class constructorTest{
+   public static void main(String[] args) {
+        Person p = new Person("Devendra",24);
+        p.Display();
+}
+}
