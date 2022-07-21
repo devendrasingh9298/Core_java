@@ -1,0 +1,25 @@
+import java.util.*;
+import java.io.*;
+
+class simpleInterest{
+public static void main(String[] args) { 
+ /*
+SI	=	Simple Interest
+P	=	initial principal balance
+r	=	annual interest rate
+t	=	time (in years) */
+Scanner sc = new Scanner(System.in);
+int p;
+float r,t,SI;
+System.out.print("Enter Principal Amaount : ");
+p = sc.nextInt();
+System.out.print("Enter Annual Interest Rate :");
+r = sc.nextFloat();
+System.out.print("Enter Time in Year :");
+t = sc.nextFloat();
+
+SI = (p*r*t)/100;
+
+System.out.print("Simple Interest = "+ SI);
+    }
+}
