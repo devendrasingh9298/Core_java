@@ -1,0 +1,38 @@
+/* Write a Jaa Program to Single Inheritance */
+
+class Person {
+   private String name;
+   private int age;
+    public void setAge(int a){
+        age = a;    
+    }
+    public void setName(String s){
+        name = s;    
+    }
+    public void getAge(){
+        System.out.println("Age is "+age);   
+    }
+    public void getName(){
+        System.out.println("Name is "+name); 
+    }
+}      
+class Student extends Person{
+    int rollno;
+    public void setRollno(int r){
+        rollno = r; 
+    }
+    public void getRollno(){
+        System.out.println("RollNo is "+rollno);   
+    }
+}
+class inheritTest{
+   public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.setRollno(5555);
+        s1.getRollno();
+        s1.setName("Alexa");
+        s1.getName();
+        s1.setAge(200);
+        s1.getAge();
+}
+}
