@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+class Box {
+    private int length,breadth,height;
+    void setDimension(int l,int b,int h){
+        length = l;
+        breadth = b;
+        height = h;
+    }
+    void showDimension(){
+        System.out.println("Length of Box = "+length);
+        System.out.println("Breadth of Box = "+breadth);
+        System.out.println("Height of Box = "+height);
+    }
+}
+   class objectCall{
+   public static void main(String[] args) {
+        Box b = new Box();
+        b.setDimension(10, 20, 15);
+        b.showDimension();
+}
+}
