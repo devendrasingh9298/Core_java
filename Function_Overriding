@@ -1,0 +1,25 @@
+/* Write a Java Program Function Overriding */
+
+class A{
+    int id , age;
+    public void fun(int a,int b){
+        id = b;
+        age = a;
+        System.out.println("Class A : "+(id+" "+age));
+    }
+}
+class B extends A{
+    public void fun(int a,int b){
+        id = b;
+        age = a;
+        System.out.println("Class B : "+(id+" "+age));
+    }
+}
+class overridingTest{
+    public static void main(String args[]){
+        A a1 = new A();
+        a1.fun(30,40);
+        B b = new B();
+        b.fun(10,20);
+    }
+}
