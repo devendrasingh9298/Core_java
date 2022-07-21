@@ -1,0 +1,22 @@
+/* Write a Java Program do Constructor Using default Constructor */
+import java.io.*;
+import java.util.*;
+
+class Person {
+   String nm;
+   int age;
+    Person(){
+        nm = "Devendra";
+        age = 24;
+    }
+    void Display(){
+        System.out.println("Name is "+nm);
+        System.out.println("Age is "+age);
+    }
+}
+   class constructorTest{
+   public static void main(String[] args) {
+        Person p = new Person();
+        p.Display();
+}
+}
