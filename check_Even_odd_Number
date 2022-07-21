@@ -1,1 +1,30 @@
 /* Write a Java Program to check Entered No is Even or Odd Using Switch Case.*/
+import java.io.*;
+import java.util.*;
+
+class condition {
+   public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int Number,check;
+        System.out.print("Enter Any Number : ");
+
+        Number = sc.nextInt();
+
+        check = Number % 2;
+
+        switch(check){
+            case 0 : {
+                System.out.print("Number is Even : "+ Number);
+                break;
+            }
+            case 1 : {
+                System.out.print("Number is Odd : "+ Number);
+                break;
+            }
+            case 2 : {
+                System.out.print("Invaid Input");
+                break;
+            }    
+            }
+   }
+}
