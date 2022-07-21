@@ -1,0 +1,12 @@
+/* Add Two Numbers */
+class Calculation{
+    public static void main(String[] args) {
+        int firstNum,SecondNum,Result;
+        firstNum = 50;
+        SecondNum = 40;
+
+        Result = firstNum + SecondNum;
+
+        System.out.print(Result);
+    }
+}
