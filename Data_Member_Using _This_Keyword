@@ -1,0 +1,22 @@
+/*  Write a java Program to se data Member Variable using this Keyword */
+
+class Employee{
+    int empid;
+    String nm;
+    static String com = "Some University";    
+     Employee(int empid, String nm){
+         this.empid = empid;
+         this.nm = nm;
+     }
+     void Display(){
+         System.out.println(empid+" "+nm+" "+com);
+     }
+    public static void main(String[] args) {
+         Employee e1 = new Employee(101, "Alexa");
+         e1.Display();
+         Employee e2 = new Employee(102, "Boat");
+         e2.Display();
+         Employee e3 = new Employee(103, "Fire");
+         e3.Display();
+ }
+}
