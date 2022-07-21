@@ -6,7 +6,7 @@ class condition {
    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int firstNum,secondNum;
-        System.out.print("Enter Three Numbers : ");
+        System.out.print("Enter Two Numbers : ");
 
         firstNum = sc.nextInt();
         secondNum = sc.nextInt();
