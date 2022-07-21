@@ -1,0 +1,20 @@
+/* Write a java Program to Print the Natural Numbers N Terms Using do_while loop */
+
+import java.io.*;
+import java.util.*;
+
+class looping {
+   public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int Terms;
+        System.out.print("Enter Terms : ");
+
+        Terms = sc.nextInt();
+
+       int i = 1;
+        do{
+        System.out.print(i+" ");
+        i++;
+       }while (i <= Terms);
+   }
+}
