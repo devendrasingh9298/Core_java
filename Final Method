@@ -1,0 +1,25 @@
+/* write a Java Program for Final Method Test */
+
+class Person{
+    String name;
+    int age;
+    public final void input(){
+        name = "Aman";
+        age = 25;
+        System.out.print("Name is "+name);
+        System.out.print("Age is "+age);
+    }
+}
+class Student extends Person{
+    int rollno;
+    public void input(){
+        rollno = 1001;
+        System.out.print("Roll No is "+rollno);
+    }
+}
+class FinalTest{
+    public static void main(String[] args) {
+       Student s1 = new Student();
+       s1.input();
+    }
+}
