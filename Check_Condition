@@ -1,4 +1,5 @@
 /*Check Condition between Three Number Using if...else*/
+
 import java.io.*;
 import java.util.*;
 
@@ -11,7 +12,17 @@ class condition {
         firstNum = sc.nextInt();
         secondNum = sc.nextInt();
         thirdNum = sc.nextInt();
+        
+        if ((firstNum > secondNum) && (firstNum > thirdNum)) {
+            System.out.print("The Biggest of First Number : "+ firstNum);
+        }else if(secondNum > thirdNum){
+            System.out.print("The Biggest of Second Number : "+ secondNum);
+        }else{
+            System.out.print("The Biggest of Third Number : "+ thirdNum);
+        }
 
+   /*Another Type*/
+   /*
         if (firstNum > secondNum) {
             if (firstNum > thirdNum) {
                 System.out.print("The Biggest of First Number : " + firstNum);
@@ -25,5 +36,7 @@ class condition {
             System.out.print("The Biggest of Third Number : "+ thirdNum);
         }
     }
+    */
    }
 }
+
