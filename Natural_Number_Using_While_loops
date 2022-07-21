@@ -1,0 +1,19 @@
+/* Write a Java Program to Print natural Number N Terms Using While Loops */
+import java.io.*;
+import java.util.*;
+
+class looping {
+   public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int Terms;
+        System.out.print("Enter Terms : ");
+
+        Terms = sc.nextInt();
+
+       int i = 1;
+       while (i <= Terms) {
+        System.out.print(i+" ");
+        i++;
+       }
+   }
+}
