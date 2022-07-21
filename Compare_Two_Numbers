@@ -1,0 +1,20 @@
+/*Compare Two Numbers*/
+import java.io.*;
+import java.util.*;
+
+class condition {
+   public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int firstNum,secondNum;
+        System.out.print("Enter Three Numbers : ");
+
+        firstNum = sc.nextInt();
+        secondNum = sc.nextInt();
+
+        if (firstNum > secondNum) {
+            System.out.print("The Biggest of First Number : "+ firstNum);
+        }else{
+            System.out.print("The Biggest of Second Number : "+ secondNum);
+        }
+   }
+}
