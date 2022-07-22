@@ -1,0 +1,30 @@
+/* Write a Java Program using Abstract Methods */
+
+abstract class Bank{
+        abstract public void setInterest();
+    }
+    class Saving extends Bank{
+        public void setInterest(){
+            System.out.println("Interest rate is 8%");
+        }
+    }
+    class Current extends Bank{
+        public void setInterest(){
+            System.out.println("Interest rate is 2%");
+        }
+    }
+    class Fixeddeposit extends Bank{
+        public void setInterest(){
+            System.out.println("Interest rate is 14%");
+        }
+    }
+    class AbstractTest{
+        public static void main(String[] args) {
+            Saving s = new Saving();
+            s.setInterest();
+            Current c = new Current();
+            c.setInterest();
+            Fixeddeposit f = new Fixeddeposit();
+            f.setInterest();
+        }
+    }
