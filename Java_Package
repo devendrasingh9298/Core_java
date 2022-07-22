@@ -1,0 +1,38 @@
+/* Write a Java Program create a Package */
+
+/* Main Class */
+package pack1;
+import java.io.*;
+import java.util.*;
+import pack2.*;
+
+public class Example{
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.setRollno(101);
+        s1.setName("Devendra Singh");
+        System.out.print("Roll No : "+s1.getRollno());
+        System.out.print("Name :"+s1.getName());
+    }
+}
+
+
+/* Create a Package */
+package pack2;
+
+public class Student{
+    private int rollno;
+    private String name;
+    public void setRollno(int r){
+        rollno = r; 
+    }
+    public void setName(String s){
+        name = s;
+    }
+    public int getRollno(){
+        return rollno;
+    }
+    public String getName(){
+        return name;
+    }
+}
