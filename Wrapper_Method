@@ -1,0 +1,32 @@
+/* Write a Java Program using Wrapper Test Method*/
+class WrapperTest{
+    public static void main(String[] args) {
+        //Boxing Process
+    
+        Integer obj1 = new Integer(123); 
+        Integer obj2 = new Integer("123");
+
+        //Boxing Process using Value of () Methos
+        
+        Integer obj3 = new Integer(125);
+        Integer obj4 = new Integer("126");
+
+        System.out.println("After Boxing Process");
+        System.out.println("obj1 =  "+obj1);
+        System.out.println("obj2 =  "+obj2);
+        System.out.println("obj3 =  "+obj3);
+        System.out.println("obj4 =  "+obj4);
+
+        //Unboxing Process
+        int a = obj1.intValue();
+        String s1 = obj2.toString();
+        int b1 = obj3.intValue();
+        String s2 = obj4.toString();
+    
+    System.out.println("After Unboxing Process");
+    System.out.print("A="+a);
+    System.out.print("s1="+s1);
+    System.out.print("B="+b1);
+    System.out.print("s2="+s2);
+    }
+}
