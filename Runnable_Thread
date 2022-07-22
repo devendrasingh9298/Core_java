@@ -17,7 +17,6 @@ public void run(){
     }
 }
 }
-
  class RunthreadTest{
 
     public static void main(String[] args) {
