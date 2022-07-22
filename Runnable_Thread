@@ -1,26 +1,31 @@
 /* Write a Java Program Runnable Thread */
+
 import java.io.*;
 import java.lang.*;
 
 class A implements Runnable{
     public void run(){
         for(int i = 0; i <= 10; i++){
-            System.out.print("Thread A = "+ i);
+            System.out.println("Thread A = "+ i);
         }
     }
 }
-public static void run(){
+class B implements Runnable{
+public void run(){
     for(int i = 0; i <= 10; i++){
-        System.out.print("Thread B = "+ i);
+        System.out.println("Thread B = "+ i);
     }
 }
+}
+
  class RunthreadTest{
 
     public static void main(String[] args) {
         Thread t1 = new Thread(new A());
         Thread t2 = new Thread(new B());
 
-            t1.Start();
-            t2.Start();
+            t1.run();
+            System.out.println("Next Thread");
+            t2.run();
     }
 }
