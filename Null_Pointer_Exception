@@ -1,0 +1,9 @@
+/* Create Null Pointer Exception */
+class NullPointerException{
+    public static void main(String[] args) {
+        String s = null;
+        System.out.println("First Line");
+        System.out.println("String length = "+s.length());
+        System.out.println("Last Line");
+    }
+}
