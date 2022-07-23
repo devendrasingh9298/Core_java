@@ -1,0 +1,25 @@
+/* Return Exception */
+import java.util.Scanner;
+
+class ExceptionTest{
+   public static void main(String[] args) {
+        int balance;
+        int withdraw;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Your Current Balance : ");
+        balance = sc.nextInt();
+        System.out.println("Enter withdrawal Amount :");
+        withdraw = sc.nextInt();
+
+        try {
+            if(balance < withdraw)
+            throw new ArithmeticException("inSufficient Balance");
+            balance = balance-withdraw;
+            System.out.println("Transaction Succesful");
+        } catch (ArithmeticException e) {
+            System.out.println("Exception = "+ e.getMessage());
+            //TODO: handle exception
+        }
+        System.out.println("Program Continue");
+    }
+}
