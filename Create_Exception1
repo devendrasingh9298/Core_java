@@ -1,0 +1,19 @@
+/* Create Exception by Using try and catch Mathed */
+import java.util.Scanner;
+
+class CreateException{
+    public static void main(String[] args) {
+    int a,b,c;
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextInt();
+        b = sc.nextInt();
+        c = a/b;
+
+        try {
+            System.out.println("Rusult = "+c);
+        } catch (Exception e) {
+            System.out.println("Exception = "+e.getMessage());
+        }
+    System.out.println("Program Successful");
+}
+}
